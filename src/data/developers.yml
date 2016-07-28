@@ -1,9 +1,9 @@
 - name: "Design"
   logo: "assets/i/developers/se7ensky.png"
   url: "#"
-- name: Frontend
+- name: "Frontend"
   logo: "src/assets/i/developers/se7ensky.png"
   url: "#"
-- name: Code
+- name: "Code"
   logo: ""assets/i/partners/se7ensky.png""
   url: "#"
