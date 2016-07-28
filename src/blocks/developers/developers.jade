@@ -1,0 +1,6 @@
++e.names
+	+e.list
+		each item in developers
+			+e.name= item.name
+			+e("a").item(href=item.url)
+				+e("img").image(src=item.image alt=item.title)
