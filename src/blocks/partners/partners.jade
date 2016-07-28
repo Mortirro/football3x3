@@ -1,0 +1,5 @@
++e("h1").name Наши партнеры
++e.list
+	each item in partners
+		+e("a").item(href=item.url)= item.title
+			+e("img").image(src=item.image alt=item.title)

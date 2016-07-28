@@ -1,0 +1,13 @@
++e("h1").name Новости
+	+e.nav-item
+		.nav__arrow-left(src="#" alt="")
+		.nav__arrow-right(src="#" alt="")
+		.navs__dots(src="#" alt="")
++e.list
+	each item in news
+		+e.item
+		+e.city= item.city
+		+e.data= item.data
+		+e("h4").news-name= item.news
+		+e.text= item.text
++e("button").see-all.close(href="#" type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события

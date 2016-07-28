@@ -1,0 +1,258 @@
+extends main
+
+block main
+	+b.promo: +i({ title: "Привет" })
+	+b.testimonials: +i
+	+b.form: +i
+	+b.cities: +i
+	+b.calendar: +i
+	+b.news: +i
+	+b.feedback: +i
+	+b.partners: +i
+	//- +b.footer: +i
+	+b.social: +i
+	+b.vacancies: +i
+	
+//- .testimonials
+//-   h1.testimonials__section Айтишники в восторге
+//-     .testimonials__section-list  
+//-           
+//-       .testimonials__section-naw 
+//-         .testimonials__arrow-left(src="#" alt="")
+//-         .testimonials__arrow-right(src="#" alt="")
+//-         .testimonials__dots(src="#" alt="")
+//-       
+//-       .testimonials__section-item
+//-         img.testimonials__section-image(src="#" alt="")
+//-         .testimonials__user-name Сергей Герасимов,
+//-         .testimonials__user-profession IT Step
+//-         .testimonials__posts-date (23.03.15)
+//-         img.testimonials__facebook-image(src="#" alt="")
+//-         a.testimonials__section-link(href="#") www.facebook.com/ihor.herasymov
+//-         .testimonials__section-description Огромное спасибо организаторам!Зарядился енергией и позитивом на месяц вперед! Респект и уважуха!
+//-       
+//-       .testimonials__section-item
+//-         img.testimonials__section-image(src="#" alt="")
+//-         .testimonials__user-name Аркадий Мирошниченко,
+//-         .testimonials__user-profession IT Step
+//-         .testimonials__posts-date (23.03.15)
+//-         img.testimonials__facebook-image(src="#" alt="")
+//-         a.testimonials__section-link(href="#") www.facebook.com/arkadii.miroshnichen…
+//-         .testimonials__section-description Огромное спасибо организаторам!Зарядился енергией и позитивом на месяц вперед! Респект и уважуха!
+//-         
+//-       .testimonials__section-item
+//-         img.testimonials__section-image(src="#" alt="")
+//-         .testimonials__user-name Аркадий Мирошниченко,
+//-         .testimonials__user-profession IT Step
+//-         .testimonials__posts-date (23.03.15)
+//-         img.testimonials__facebook-image(src="#" alt="")
+//-         a.testimonials__section-link(href="#") www.facebook.com/arkadii.miroshnichen…
+//-         .testimonials__section-description Огромное спасибо организаторам!Зарядился енергией и позитивом на месяц вперед! Респект и уважуха!
+//-   
+//- 
+//- .form
+//-   .form__section-name Стань частью события!
+//-   forms
+//-     label.form__company-name Компания
+//-       input("text" name="name" size="27" maxlength="10") 
+//-     label.form__user-name Имя
+//-       input("text" name="name" size="27" maxlength="10")
+//-     label.form__user-phone Phone
+//-       input(type="" name="" value="")+38 (0XX) XXX - XX - XX
+//-     label.form__user-email E-mail
+//-       input(type="" name="" value="")
+//-       input(type="radio" name="answer" value="") У нас есть команда
+//-       button.form__deal-button(type="button" data-dismiss="modal" aria-hidden="true")СТАТЬ ПАРТНЕРОМ
+//-       h3.form__info Ваши данные никогда не будут переданы 3-м лицам.
+//- 
+//- .cities
+//-   h1.cities__name Подай заявку на участие в своем городе
+//-     .cities__list
+//-       .cities__list-item
+//-         .cities__item-container
+//-         
+//-           h2.cities__item-name-1 КИЕВ
+//-           .cities__item-tags
+//-             a.cities__item-tag(href="#") Житомир
+//-             a.cities__item-tag(href="#") Винница
+//-             a.cities__item-tag(href="#") Черкассы
+//-             a.cities__item-tag(href="#") Чернигов
+//-             
+//-           h2.cities__item-name-2 ЛЬВОВ
+//-           .cities__item-tags
+//-             a.cities__item-tag(href="#") Луцк
+//-             a.cities__item-tag(href="#") Ивано-Франковск
+//-             a.cities__item-tag(href="#") Ужгород
+//-             a.cities__item-tag(href="#") Тернополь
+//-             a.cities__item-tag(href="#") Черновцы
+//-             a.cities__item-tag(href="#") Хмельницкий
+//-             a.cities__item-tag(href="#") Ровно
+//-             a.cities__item-tag(href="#") Каменец-Подольский
+//-             
+//-           h2.cities__item-name-3 ХАРЬКОВ
+//-           .cities__item-tags
+//-             a.cities__item-tag(href="#") Суммы
+//-             a.cities__item-tag(href="#") Полтава
+//-             
+//-           h2.cities__item-name-4 ДНЕПР
+//-           .cities__item-tags
+//-             a.cities__item-tag(href="#") Кременчуг
+//-             a.cities__item-tag(href="#") Кировоград
+//-             a.cities__item-tag(href="#") Кривой Рог
+//-             a.cities__item-tag(href="#") Запорожье
+//-             a.cities__item-tag(href="#") Бердянск
+//-             a.cities__item-tag(href="#") Мариуполь
+//-             
+//-           h2.cities__item-name-5 ОДЕССА
+//-           .cities__item-tags
+//-             a.cities__item-tag(href="#") Николаев
+//-             a.cities__item-tag(href="#") Симферополь
+//-             a.cities__item-tag(href="#") Херсон
+//-           
+//- .calendar
+//-   h1.calendar__name Календарь событий 
+//-   .calendar__list         
+//-   
+//-     .cities__item-1
+//-       h2.cities__item-name-1 Киев
+//-       .cities__item-data-1 01.12.2016
+//-       h3.cities__news-name-1 В Киеве пройдет масштабный чемпионат Украины по футболу 3х3 среди стартаперов, айтишников ...
+//-       h3.cities__news-description-1 В Киеве пройдет масштабный чемпионат Украины по футболу 3х3 среди стартаперов, айтишников ...
+//-     
+//-     .cities__item-2
+//-       h2.cities__item-name-2 Одесса
+//-       .cities__item-data-2 28.10.2016
+//-       h3.cities__news-name-2 Сандерленд разрешил Аллардайсу провести переговоры с ФА
+//-       h3.cities__news-description-2 Главный тренер Сандерленда Сэм Аллардайс получил согласие от руководства клуба на вступление ...
+//-     
+//-     .cities__item-3
+//-       h2.cities__item-name-3 Харьков
+//-       .cities__item-data-3 13.07.2016
+//-       h3.cities__news-name-3 Левый защитник ПСЖ Лукас Динь продолжит свою карьеру в Испании.
+//-       h3.cities__news-description-2 Как сообщает официальный сайт Барселоны, клуб согласовал трансфер 22-летнего защитника.
+//-     
+//-     .cities__item-4
+//-       h2.cities__item-name-4 Киев
+//-       .cities__item-data-4 01.12.2016
+//-       h3.cities__news-name-4 В Киеве пройдет масштабный чемпионат Украины по футболу 3х3 среди ...
+//-       h3.cities__news-description-4 В Киеве пройдет масштабный чемпионат Украины по футболу 3х3 среди стартаперов, айтишников ...
+//-     
+//-     .cities__item-5
+//-       h2.cities__item-name-5 Одесса
+//-       .cities__item-data-5 8.10.2016
+//-       h3.cities__news-name-5 Сандерленд разрешил Аллардайсу провести переговоры с ФА
+//-       h3.cities__news-description-5 Главный тренер Сандерленда Сэм Аллардайс получил согласие от руководства клуба на вступление ...
+//-     
+//-     .cities__item-6
+//-       h2.cities__item-name-6 Харьков
+//-       .cities__item-data-6 13.07.2016
+//-       h3.cities__news-name-6 Левый защитник ПСЖ Лукас Динь продолжит свою карьеру в Испании.
+//-       h3.cities__news-description-6 Как сообщает официальный сайт Барселоны, клуб согласовал трансфер 22-летнего защитника.
+//-   button.cities__news-see__all.close(href="#" type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события
+//-   
+//- 
+//- .news
+//-   h1.news__name Новости
+//-     .news__nav-item
+//-       .nav__arrow-left(src="#" alt="")
+//-       .nav__arrow-right(src="#" alt="")
+//-       .navs__dots(src="#" alt="")
+//-         .news__list
+//-               
+//-           .news__item-1
+//-             h2.news__item-name-1 Киев
+//-             .news__item-data-1 01.12.2016
+//-             h3.news__header-1 В Киеве пройдет масштабный чемпионат Украины по футболу 3х3 среди ...
+//-             h3.news__header-description-1 В Киеве пройдет масштабный чемпионат Украины по футболу 3х3 среди стартаперов, айтишников ...
+//-           
+//-           .news__item-2
+//-             h2.news__item-name-2 Одесса
+//-             .news__item-data-2 28.10.2016
+//-             h3.news__header-2 Сандерленд разрешил Аллардайсу провести переговоры с ФА
+//-             h3.news__header-description-2 Как сообщает официальный сайт Барселоны, клуб согласовал трансфер 22-летнего защитника.
+//-           
+//-           .news__item-3
+//-             h2.news__item-name-3 Харьков 
+//-             .news__item-data-3 13.07.2016
+//-             h3.news__header-3 Левый защитник ПСЖ Лукас Динь продолжит свою карьеру в Испании.
+//-             h3.news__header-description-3 Как сообщает официальный сайт Барселоны, клуб согласовал трансфер 22-летнего защитника.
+//-     
+//-     button.news__see-all.close(href="#" type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события
+//- 
+//- //feedback
+//- .feedback
+//-   img.feedback__image(src="#" alt="startup ukraine")
+//-   h1.feedback__name Будь всегда в курсе
+//-   h3.feedback__name-description Мы постоянно расширяемся и ищем партеров в новых городах
+//-   forms        
+//-     label.feedback__user-email E-mail
+//-       input(type="" name="" value="")
+//-       button.form__deal-button(type="button" data-dismiss="modal" aria-hidden="true")БЫТЬ В КУРСЕ
+//-       h6.feedback__info Ваши данные никогда не будут переданы 3-м лицам.
+//- 
+//- 
+//- 
+//- 
+//- 
+//- //partners
+//- .partners
+//-   h1.partners__name Наши партнеры
+//-   .partners__list
+//-     a.partners__item-1(href="#" alt="bigmir.net")
+//-     a.partners__item-2(href="#" alt="growth up")
+//-     a.partners__item-3(href="#" alt="startup ucraine")
+//-     a.partners__item-4(href="#" alt="бизнес молодость")
+//-     a.partners__item-5(href="#" alt="startup nerwork ")
+//-     a.partners__item-6(href="#" alt="impuct hub Odessa")
+//-     a.partners__item-7(href="#" alt="1991")
+//-     a.partners__item-8(href="#" alt="i-hub")
+//-     a.partners__item-9(href="#" alt="karabas.com")
+//-     a.partners__item-10(href="#" alt="kiselev")
+//-     a.partners__item-11(href="#" alt="^")
+//-     a.partners__item-12(href="#" alt="Se7ensky")
+//-     a.partners__item-13(href="#" alt="start-it")
+//-     a.partners__item-14(href="#" alt="bionic-university")
+//-     a.partners__item-15(href="#" alt="ajutant")
+//-     a.partners__item-12(href="#" alt="ukrFreestyle")
+//-             
+//- //footer
+//- .footer
+//-   .footer__contacts
+//-     h2.footer__contacts-name Наши контакты
+//-     .footer__contacts-item
+//-       span.footer__contacts-label Город:
+//-       a.footer__contacts-city(href="") Киев
+//-     .footer__contacts-item
+//-       span.footer__contacts-label Адрес:
+//-       a.footer__contacts-address(href="") пр. Победы, 87
+//-     .footer__contacts-item
+//-       span.footer__contacts-label Телефон:
+//-       a.footer__contacts-tel(href="tel:+380931933942") +38 093 193 39 42              
+//-     .footer__contacts-item
+//-       span.footer__contacts-label Почта:
+//-       a.footer__contacts-email(href="mailto:3х3football@gmail.com") 3х3football@gmail.com
+//-   
+//-   .footer__social
+//-     a(href="#")    
+//-       img.footer__social-vk(src="#" alt="")
+//-     a(href="#")
+//-       img.footer__social-fb(src="#" alt="")
+//-     a(href="#")          
+//-       img.footer__social-twitter(src="#" alt="")
+//-     a(href="#") 
+//-       img.footer__social-instagram(src="#" alt="")
+//-                                                            
+//-   .footer__vacancies
+//-     h2.footer__vacancies-name Вакансии
+//-     .footer__vacancy(href="#") Продакт менеджер
+//-     .footer__vacancy(href="#")  Администратор
+//-     .footer__vacancy(href="#") Контент менеджер
+//-   
+//-   .footer__dev
+//-     .footer__dev-list
+//-         .footer__dev-design Design
+//-           img.footer__esign-logo(src="#" alt="Kiselev")
+//-         .footer__dev-frontend Frontend
+//-           img.footer__frontend-logo(src="#" alt="Se7ensky")
+//-         .footer__dev-code Code
+//-           img.footer__code-logo(src="#" alt="Se7ensky")  

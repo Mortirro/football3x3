@@ -1,0 +1,55 @@
+- title: Киев
+  subitems:
+      - title: Житомир
+        url: "/"
+      - title: Винница
+        url: "/"
+      - title: Черкасы
+        url: "/"
+      - title: Чернигов
+        url: "/"
+- title: Львов
+  subitems:
+      - title: Луцк
+        url: "/"
+      - title: Ивано-Франковск
+        url: "/"
+      - title: Ужгород
+        url: "/"
+      - title: Тернополь
+        url: "/"
+      - title: Черновцы
+        url: "/"
+      - title: Хмельницкий
+        url: "/"
+      - title: Ровно
+        url: "/"
+      - title: Каменец-Подольский
+        url: "/"
+- title: Харьков
+  subitems:
+      - title: Суммы
+        url: "/"
+      - title: Полтава
+        url: "/"
+- title: Днепр
+  subitems:
+      - title: Кременчуг
+        url: "/"
+      - title: Кировоград
+        url: "/"
+      - title: Кривой Рог
+        url: "/"
+      - title: Запорожье
+        url: "/"
+      - title: Бердянск
+        url: "/"
+      - title: Мариуполь
+- title: Одесса
+  subitems:
+      - title: Николаев
+        url: "/"
+      - title: Симферополь
+        url: "/"
+      - title: Херсон
+        url: "/"

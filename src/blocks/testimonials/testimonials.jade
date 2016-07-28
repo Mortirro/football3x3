@@ -1,0 +1,10 @@
++e("h1").title Айтишники в восторге
++e.list
+	each item in testimonials
+		+e.item
+			+e.name= item.name
+			+e.company= item.company
+			+e("img").image(src=item.image alt="")
+			+e.date= item.date
+			+e("link").socialLink= item.socialLink
+			+e.text= item.text

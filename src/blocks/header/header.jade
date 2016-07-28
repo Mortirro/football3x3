@@ -1,0 +1,7 @@
++e("a").logo(href=site.url)
+  +e("img").logo-image(src=site.logo.image alt="" width=site.logo.width height=site.logo.height)
++e.menu
+  +e("ul").menu-list
+    each item in mainMenu
+      +e("li").menu-item
+        +e("a").menu-link(href=item.url)= item.title
