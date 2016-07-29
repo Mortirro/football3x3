@@ -2,7 +2,8 @@
 +e.list
 	each item in testimonials
 		+e.item
-			+e("img").image(src=item.image alt="")
+			+e.image-container
+				+e("img").image(src=item.image alt="")
 			+e.name= item.name
 			+e.company= item.company
 			+e.date= item.date
