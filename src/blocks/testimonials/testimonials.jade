@@ -7,5 +7,9 @@
 			+e.name= item.name
 			+e.company= item.company
 			+e.date= item.date
-			+e("a").socialLink= item.socialLink
+			+e.social-container
+				+e("img").socialImage(src=item.socialImage width="19px" height="19px" alt="")
+				+e.link-contatner
+				+e("a").socialLink(href="https://www.facebook.com/")= item.socialLink
 			+e.text= item.text
+			+e.shadow
