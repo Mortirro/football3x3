@@ -1,4 +1,76 @@
-// .news
-// 	text-align: center;
-// 	width 1084px
-// 	margin 0 auto
+.news
+	position relative
+	text-align center
+	background #f9f9f9
+	width 100%
+	z-index -10
+	&__section-title
+		padding-top 68px
+		font-size 40px
+		color #fff
+	&__list
+		width 1160px
+		margin 0 auto
+		text-align center
+	&__item
+		display inline-block
+		margin 30px
+		width 320px
+		height 390px
+		border 1px solid #cdcdcd
+		// box-shadow 0 0 50px
+	&__image
+		position relative
+		width 100%
+		height auto
+		z-index 4
+		&-container
+			position relative
+			width 320px
+			height 194px
+			z-index: 3
+		&-shadow
+			position absolute
+			background-color rgba(0, 0, 0, 0.3)
+			width 100%
+			height 100%
+			z-index 5
+	&__city
+		position absolute
+		top 15px
+		left -3px
+		background red
+		font-size 18px
+		color #fff
+		padding 8px 30px 11px 32px
+		z-index 6
+	&__data
+		position absolute
+		bottom 16px
+		left 15px
+		font-size 18px
+		color: #fff
+		z-index 7
+	&__content-container
+		text-align left
+		width 320px
+		height 215px
+		font-size 16px
+		line-height 1.5
+		background #fff
+	&__news
+		&-name
+			padding 24px 20px 12px 14px
+		&-description
+			padding 12px 20px 24px 14px
+		&-see__all
+			margin-top 60px
+	&__bottom-shadow
+		position relative
+		margin 0 auto
+		margin-top -20px
+		z-index -1
+		width 300px
+		height 20px
+		border-radius 1000px/100px
+		box-shadow 0 0 30px

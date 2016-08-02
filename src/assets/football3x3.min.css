@@ -3,7 +3,36 @@ group-css-media-queries: true
 cssmin: true
 ---
 /*! project.css v1.0.0 | SE7ENSKY frontend studio <hello@se7ensky.com> */
-
+/*@font-face {
+	font-family: "exo2";
+	src: url(assets/f/exo2/exo2-bold-webfont.eot);
+	src: url(assets/f/exo2/exo2-bold-webfont.swg);
+	src: url(assets/f/exo2/exo2-bold-webfont.ttf);
+	src: url(assets/f/exo2/exo2-bold-webfont.woff);
+	src: url(assets/f/exo2/exo2-medium-webfont.eot);
+	src: url(assets/f/exo2/exo2-medium-webfont.swg);
+	src: url(assets/f/exo2/exo2-medium-webfont.ttf);
+	src: url(assets/f/exo2/exo2-medium-webfont.woff);
+	src: url(assets/f/exo2/exo2-regular-webfont.eot);
+	src: url(assets/f/exo2/exo2-regular-webfont.swg);
+	src: url(assets/f/exo2/exo2-regular-webfont.ttf);
+	src: url(assets/f/exo2/exo2-regular-webfont.woff);
+}
+@font-face {
+	font-family: "uduntu";
+	src: url(assets/f/ubuntu/ubuntu-bold-webfont.eot);
+	src: url(assets/f/ubuntu/ubuntu-bold-webfont.swg);
+	src: url(assets/f/ubuntu/ubuntu-bold-webfont.ttf);
+	src: url(assets/f/ubuntu/ubuntu-bold-webfont.woff);
+	src: url(assets/f/ubuntu/ubuntu-medium-demo.eot);
+	src: url(assets/f/ubuntu/ubuntu-medium-demo.swg);
+	src: url(assets/f/ubuntu/ubuntu-medium-demo.ttf);
+	src: url(assets/f/ubuntu/ubuntu-medium-demo.woff);
+	src: url(assets/f/ubuntu/ubuntu-regular-webfont.eot);
+	src: url(assets/f/ubuntu/ubuntu-regular-webfont.swg);
+	src: url(assets/f/ubuntu/ubuntu-regular-webfont.ttf);
+	src: url(assets/f/ubuntu/ubuntu-regular-webfont.woff);
+}*/
 /*= require assets/styles/normalize */
 /*= require assets/styles/typo */
 /*= require assets/styles/helpers */

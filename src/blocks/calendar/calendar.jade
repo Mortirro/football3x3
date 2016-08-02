@@ -1,9 +1,16 @@
-+e("h1").calendar__name Календарь событий
++e.before-shadow
++e("h1").section-title Календарь событий
 +e.list
 	each item in calendar
 		+e.item
-			+e("h4").city= item.city
-			+e.data= item.data
-			+e("h4").news-name= item.news
-			+e.news-description= item.text
+			+e.image-container
+				+e.image-shadow
+				+e("img").image(src=item.image alt="")
+				+e.city= item.city
+				+e.data= item.data
+			+e.content-container
+				+e.news-name= item.news
+				+e.news-description= item.text
+			+e.bottom-shadow
 +e("button").news-see__all.close(href="#" type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события
++e.after-shadow
