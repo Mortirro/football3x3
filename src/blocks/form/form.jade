@@ -1,19 +1,17 @@
-form
-	+e.list
-		+e.item
-			+e.forms-container
-				+e("h1").section-name Стань частью события!
-				+e.company-name Компания
-				+e("input").input-name(type="text" name="name" size="27" maxlength="10")
-				+e("label").user-name Имя
-					+e("input").input-name(type="text" name="name" size="27" maxlength="10")
-				+e("label").user-phone Phone
-					+e("input").user-number(type="tel" name="" placeholder="+38 (0XX) XXX - XX - XX")
-				+e("label").user-email
-					span E-mail
-					input(type="email" name="" value="")
-				+e("label").user-team
-					input(type="checkbox" name="" )
-					span У нас есть команда
-				+e("button").deal-button(type="button" data-dismiss="modal" aria-hidden="true") СТАТЬ ПАРТНЕРОМ
-				+e.info Ваши данные никогда не будут переданы 3-м лицам.
++e.form
++e.form-shadow
+		+e.forms-container
+			+e("h1").section-name Стань частью события!
+			+e.company-name Компания
+			+e("input").input-name(type="text" name="name" size="28" maxlength="10")
+			+e("label").user-name Имя
+			+e("input").input-name(type="text" name="name" size="28" maxlength="10")
+			+e("label").user-phone Phone
+			+e("input").input-name(type="text" name="name" size="28" maxlength="10")
+			+e("label").user-email Email
+			+e("input").input-name(type="text" name="name" size="28" maxlength="10" placeholder="+38 (0XX) XXX - XX - XX")
+			+e("label").user-team
+				+e("input").checkbox(type="checkbox" name="" )
+				span У нас есть команда
+			+e("button").deal-button(type="button" data-dismiss="modal" aria-hidden="true") СТАТЬ ПАРТНЕРОМ
+			+e.info Ваши данные никогда не будут переданы 3-м лицам.
