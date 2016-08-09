@@ -1,14 +1,16 @@
-- title: Киев
+- image: "assets/i/bg-cities.png"
+  title: Киев
   subitems:
       - title: Житомир
         url: "/"
       - title: Винница
         url: "/"
-      - title: Черкасы
+      - title: Черкаcсы
         url: "/"
       - title: Чернигов
         url: "/"
-- title: Львов
+- image: "assets/i/bg-cities.png"
+  title: Львов
   subitems:
       - title: Луцк
         url: "/"
@@ -26,13 +28,15 @@
         url: "/"
       - title: Каменец-Подольский
         url: "/"
-- title: Харьков
+- image: "assets/i/bg-cities.png"
+  title: Харьков
   subitems:
       - title: Суммы
         url: "/"
       - title: Полтава
         url: "/"
-- title: Днепр
+- image: "assets/i/bg-cities.png"
+  title: Днепр
   subitems:
       - title: Кременчуг
         url: "/"
@@ -45,7 +49,9 @@
       - title: Бердянск
         url: "/"
       - title: Мариуполь
-- title: Одесса
+        url: "/"
+- image: "assets/i/bg-cities.png"
+  title: Одесса
   subitems:
       - title: Николаев
         url: "/"

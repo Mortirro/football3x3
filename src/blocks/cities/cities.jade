@@ -1,10 +1,12 @@
-+e("h2").title Подай заявку на участие в своем городе
++e.title Подай заявку на участие в своем городе
 +e.list
 	each item in ourCities
 		+e.item
-			+e.item-container
-				+e("h2").main= item.title
-				+e.item-tags
-					if item.subitems
-						each subitem in item.subitems
-							+e("a").subsidiary(href=subitem.url)= subitem.title
+			+e.image-container
+				+e.image-shadow
+				+e("img").image(src=item.image alt="")
+			+e.main= item.title
+			+e.item-tags
+				if item.subitems
+					each subitem in item.subitems
+						+e("a").subsidiary(href=subitem.url)= subitem.title
