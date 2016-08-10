@@ -1,12 +1,13 @@
-+e.bg
-+e.sponsors
+.container	
+	+e.bg
+	+e.sponsors
 	+e.sponsors-names
 		+e.sponsors-list
 		if sponsors
 			each item in sponsors
 				+e("a").sponsors-item(href=item.url)
 					+e("img").sponsors-image(src=item.url alt=item.title)
-+e.content
+	+e.content
 	+e.title ЦЕНТРАЛЬНОЕ ФУТБОЛЬНОЕ СОБЫТИЕ ГОДА
 	+e.text Открытие заявок для Украинской Startup и IT экосистемы, <br> в 7 городах с 1 июля. Мы ищем организационных партнеров.
 	+e("a").button(href="/") Стать партнером
