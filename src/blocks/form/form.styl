@@ -1,57 +1,67 @@
 .form
-  text-align center
-  background url('i/bg-form.png') no-repeat center center
-  background-size cover
-  margin 0 auto
-  height 524px
-  font-family 'ubunturegular'
-  font-size 19px
-  color #fff
-.form__form-shadow
-  background-color rgba(0, 0, 0, 0.65)
-  width 100%
-  height 100%
-.form__section-name
-  margin-top 43px
-  margin-bottom 30px
-  font-family 'ubuntumedium'
-  font-size 40px
-.form__forms-container
-  display: inline-block
-  text-align left
-  width: 450px
-.form__company-name,
-.form__user-name,
-.form__user-phone,
-.form__user-email
-  float: left
-  display inline-block
-  margin: 11px auto
-  width 30%
-.form__input-name
-  width: 70%
-  border-radius 6px
-  margin: 11px auto
-.form__user-team
-  display inline-block
-  margin 0 auto
-  width 100%
-.form__user-team
-  margin-left 130px
-.form__deal-button
-  display inline-block
-  background #f23e35
-  margin-top 20px
-  font-family: 'exo_2bold';
-  font-size 30px
-  border-radius 6px
-  width 100%
-  height 64px
-.form__info
-  font-family 'ubuntubold'
-  text-align center
-  margin-top 10px
-  font-size: 14px
-//
-.form__checkbox
-  margin-right 8px
+	text-align center
+	background url('i/bg-form.png') no-repeat center center
+	background-size cover
+	margin 0 auto
+	color #fff
+	&__form-shadow
+		background-color rgba(0, 0, 0, 0.65)
+		// width 100%
+		// height 100%
+	&__section-name
+		margin-top 43px
+		margin-bottom 30px
+		text-align center
+		font-family 'ubuntu'
+		font-weight 500
+		font-size 40px
+		line-height 1.2
+	&__forms-container
+		display inline-block
+		text-align left
+		width 32%
+		// ?
+	&__company-name,
+	&__user-name,
+	&__user-phone,
+	&__user-email
+		margin 15px auto
+		float left
+		display block
+		vertical-align middle
+		width 30%
+		font-family 'ubuntu'
+		font-weight 400
+		font-size 19px
+		// color #fff
+	&__input-name
+		margin 11px auto
+		width 70%
+		height 40px
+		border-radius 6px
+		border 0
+	&__user-team
+		display inline-block
+		margin 0 auto
+		width 100%
+	&__user-team
+		margin-left 30%
+	&__deal-button
+		display inline-block
+		margin-top 20px
+		width 100%
+	&__info
+		text-align center
+		margin-top 10px
+		margin-bottom 50px
+		font-family 'ubuntu'
+		font-weight bold
+		font-size 14px
+		// color #fff
+	// &__checkbox
+	// 	margin-right 8px
+	&__span
+		margin-left 8px
+		font-family 'exo_2'
+		font-weight bold
+		font-size 18px

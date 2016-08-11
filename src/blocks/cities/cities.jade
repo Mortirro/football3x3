@@ -1,13 +1,15 @@
-+e.title Подай заявку на участие в своем городе
-+e.list
-	each item in ourCities
-		+e.item
-			+e.image-container
-				+e.image-shadow
-				+e("img").image(src=item.image alt="")
-			+e.after-shadow
-			+e.main= item.title
-			+e.item-tags
-				if item.subitems
-					each subitem in item.subitems
-						+e("a").subsidiary(href=subitem.url)= subitem.title
+.container
+	+e.title Подай заявку на участие в своем городе
+	+e.list
+		each item in ourCities
+			+e.item
+				+e.image-block
+					+e.image-container
+						+e.image-shadow
+						+e("img").image(src=item.image alt="")
+					+e.main-container
+						+e.main= item.title
+				+e.item-tags
+					if item.subitems
+						each subitem in item.subitems
+							+e("a").subsidiary(href=subitem.url)= subitem.title

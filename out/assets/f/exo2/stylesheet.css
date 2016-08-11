@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'exo_2';
+    src: url('f/exo2/exo2-bold.eot');
+    src: url('f/exo2/exo2-bold.eot?#iefix') format('embedded-opentype'),
+         url('f/exo2/exo2-bold.woff2') format('woff2'),
+         url('f/exo2/exo2-bold.woff') format('woff'),
+         url('f/exo2/exo2-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exo_2';
+    src: url('f/exo2/exo2-medium.eot');
+    src: url('f/exo2/exo2-medium.eot?#iefix') format('embedded-opentype'),
+         url('f/exo2/exo2-medium.woff2') format('woff2'),
+         url('f/exo2/exo2-medium.woff') format('woff'),
+         url('f/exo2/exo2-medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exo_2';
+    src: url('f/exo2/exo2-regular.eot');
+    src: url('f/exo2/exo2-regular.eot?#iefix') format('embedded-opentype'),
+         url('f/exo2/exo2-regular.woff2') format('woff2'),
+         url('f/exo2/exo2-regular.woff') format('woff'),
+         url('f/exo2/exo2-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
