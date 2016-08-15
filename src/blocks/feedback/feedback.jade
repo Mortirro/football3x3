@@ -1,9 +1,10 @@
-+e("img").image(src="assets/i/feetback-logo.png" alt="")
-+e.forms
-	+e.name Будь всегда в курсе
-	+e.name-description Мы постоянно расширяемся и ищем партеров в новых городах
-	+e("label").user-email
-		span E-mail
-		+e("input").input-email(type="email" name="" value="")
-	+e("button").deal-button(type="button" data-dismiss="modal" aria-hidden="true") БЫТЬ В КУРСЕ
-	+e.info Ваши данные никогда не будут переданы 3-м лицам.
+.container
+	+e("img").image(src="assets/i/feetback-logo.png" alt="")
+	+e.forms
+		+e.name Будь всегда в курсе
+		+e.name-description Мы постоянно расширяемся и ищем партеров в новых городах
+		+e("label").user-email
+			span E-mail
+			+e("input").input-email(type="email" name="" value="" maxlength="15")
+		+e("button").deal-button.btn(type="button" data-dismiss="modal" aria-hidden="true") БЫТЬ В КУРСЕ
+		+e.info Ваши данные никогда не будут переданы 3-м лицам.
