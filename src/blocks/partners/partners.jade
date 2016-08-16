@@ -1,5 +1,6 @@
-+e("h1").name Наши партнеры
-+e.list
-	each item in partners
-		+e("a").item(href=item.url)= item.title
-			+e("img").image(src=item.image alt=item.title)
++e.name Наши партнеры
+.container
+	+e.list
+		each item in partners
+			+e("a").item(href=item.url)= item.title
+				+e("img").image(src=item.image width="200px" height="auto" alt=item.title)
