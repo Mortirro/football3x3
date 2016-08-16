@@ -1,17 +1,31 @@
 .footer
-	background #43474e
-	// text-align: center;
-	// width 1084px
-	// margin 0 auto
+	&__contacts
+		float left
+		background #43474e
+		width 100%
+		&::after
+			display inline-block
+			content ""
+			height 96%
+			vertical-align top
 	&__col
 		display inline-block
-		width 33.3%
-&__social
-	// display inline-block
-.social__social
-	display inline-block
-.social__item
-	display inline-block
-.vacancies
-	// display inline-block
-	vertical-align top
+		width 33%
+		vertical-align top
+		font-weight 400
+		font-size 16px
+		font-family "ubuntu"
+		text-align left
+		color #8e9197
+	&__contacts-name
+		margin 55px 0 35px
+		font-weight normal
+		font-size 25px
+		font-family "ubuntu"
+		color #fffefe
+	&__contacts-email,
+	&__contacts-tel,
+	&__contacts-address,
+	&__contacts-city
+		text-decoration none
+		color #8e9197

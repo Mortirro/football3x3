@@ -3,4 +3,5 @@
 		each item in developers
 			+e.item
 				+e.name= item.name
-				+e("img").image(src=item.image alt="")
+				+e.image-container
+					+e("img").image(src=item.image width="121px" height="auto" alt="")
