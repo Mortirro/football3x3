@@ -1,17 +1,17 @@
 - title: "Спонсор 1"
-  image: "assets/i/partners/se7ensky.png"
+  image: "assets/i/developers/s7_logo.svg"
   url: "/"
   general: true
 - title: "Спонсор 2"
-  image: "assets/i/partners/se7ensky.png"
+  image: "assets/i/developers/s7_logo.svg"
   url: "/"
   general: true
 - title: "Спонсор 3"
-  image: "assets/i/sponsors/se7ensky.png"
+  image: "assets/i/developers/s7_logo.svg"
   url: "/"
   general: true
 - title: "Спонсор 4"
-  image: "assets/i/sponsors/se7ensky.png"
+  image: "assets/i/developers/s7_logo.svg"
   url: "/"
   general: true
 - title: "Спонсор 5"

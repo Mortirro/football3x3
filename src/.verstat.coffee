@@ -4,7 +4,7 @@ filters = [
 	///^globals/.*///
 	///^layouts/.*///
 ]
-module.exports =	
+module.exports =
 	'noprocess+': filters
 	'nowrite+': filters.concat [
 		///^assets/scripts/.*///
@@ -12,4 +12,10 @@ module.exports =
 	]
 	'ignore+': [
 		///^globals/.*///
+	]
+	"rawExtnames+": [
+		'.mp4'
+		'.pdf'
+		'.doc'
+		'.docx'
 	]
