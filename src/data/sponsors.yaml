@@ -1,17 +1,17 @@
 - title: "Спонсор 1"
-  image: "assets/i/developers/s7_logo.svg"
+  image: "assets/i/sponsors/nebesna_logo.jpg"
   url: "/"
   general: true
 - title: "Спонсор 2"
-  image: "assets/i/developers/s7_logo.svg"
+  image: "assets/i/sponsors/footboom_logo.png"
   url: "/"
   general: true
 - title: "Спонсор 3"
-  image: "assets/i/developers/s7_logo.svg"
+  image: "assets/i/sponsors/startap_ukraine_logo.png"
   url: "/"
   general: true
 - title: "Спонсор 4"
-  image: "assets/i/developers/s7_logo.svg"
+  image: "assets/i/sponsors/bigmir_logo.png"
   url: "/"
   general: true
 - title: "Спонсор 5"
