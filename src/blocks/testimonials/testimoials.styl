@@ -1,29 +1,45 @@
 .testimonials
 	// padding 40px 0
 	// margin 0 auto
-	text-align center
 	background-color #f9f9f9
 	&__title
 		padding-top 43px
 		padding-bottom 34px
+		text-align center
 		font-weight 500
 		font-size 40px
 		font-family 'ubuntu'
 	&__list
-		width 90%
-		margin 0 auto
+		padding-top 38px
+		padding-left 0
+		padding-right 0
+		padding-bottom 115px
+		margin 0 -10px
 		text-align center
 		font-size 15px
 		clearfix()
 	&__item
+		position relative
 		float left
-		width 32%
-		margin 0 5px 60px
+		width 33%
 		padding 10px
-		text-align left
-		background-color #fff
-		border-radius 16px
-		border solid 1px #d9d9d9
+		&-inner
+			position relative
+			z-index 2
+			background-color #fff
+			border-radius 6px
+			border solid 1px #d9d9d9
+		&:after
+			position absolute
+			z-index 1
+			bottom 10px
+			left 20px
+			right 20px
+			content ''
+			height 30px
+			// margin 0 auto
+			border-radius 340px/30px
+			box-shadow 0 0 20px
 	&__image
 		width 100%
 		height auto
@@ -34,35 +50,42 @@
 			width 38px
 			height 38px
 			border-radius 4px
+	&__info
+		text-align left
 	&__name
 		margin-top 5px
 		display inline-block
+		text-align left
+		font-weight 500
 		font-size 18px
+		font-family "ubuntu"
 	&__date
-		display block
+		text-align left
+		display inline-block
 		color #adadad
 		font-size 15px
+	&__company
+		display inline-block
+		text-align left
+		font-weight 500
+		font-size 18px
+		font-family "ubuntu"
 	&__social-container
 		margin-top 10px
+		text-align left
+		&::after
+			display inline-block
+			vertical-align middle
+			height 96%
 	&__social-image
+		display inline-block
+		vertical-align middle
 		float left
 		margin-left 28px
 	&__link-contatner
-		display: inline-block
+		display inline-block
+		vertical-align middle
 		margin-left 5px
-	&__company
-		display: inline-block
-		font-size 15px
 	&__text
+		text-align left
 		margin 12px 12px 20px 24px
-	&__shadow
-		position relative
-		margin 0 auto
-		margin-top -40px
-		z-index -1
-		width 314px
-		height 30px
-		border-radius 1000px/100px
-		-webkit-box-shadow 0 0 30px
-		-moz-box-shadow 0 0 30px
-		box-shadow 0 0 30px

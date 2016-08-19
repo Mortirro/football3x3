@@ -3,14 +3,17 @@
 	+e.list
 		each item in testimonials
 			+e.item
-				+e.image-container
-					+e("img").image(src=item.image alt="")
-				+e.name= item.name
-				+e.company= item.company
-				+e.date= item.date
-				+e.social-container
-					+e("img").socialImage(src=item.socialImage width="19px" height="19px" alt="")
-					+e.link-contatner
-					+e("a").socialLink(href="https://www.facebook.com/")= item.socialLink
-				+e.text= item.text
-				+e.shadow
+				+e.item-inner
+					+e.image-container
+						+e("img").image(src=item.image alt="")
+					+e.info
+						+e.name= item.name
+						+e.company= item.company
+						+e.date= item.date
+					+e.social-container
+						+e("a")(href="https://www.facebook.com/")
+							+e("img").social-image(src=item.socialImage width="19px" height="19px" alt="")
+						+e.link-contatner
+						+e("a").socialLink(href="https://www.facebook.com/")= item.socialLink
+					
+					+e.text= item.text
