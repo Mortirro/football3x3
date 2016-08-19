@@ -1,14 +1,16 @@
-+e("h1").name Новости
-+e.list
-	each item in news
-		+e.item
-			+e.image-container
-				+e.image-shadow
-				+e("img").image(src=item.image alt="")
-				+e.city= item.city
-				+e.data= item.data
-			+e.content-container
-				+e.header= item.name
-				+e.description= item.text
-			+e.bottom-shadow
-+e("button").news-see__all(href="#" type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события
+.container
+	+e.box
+		+e.section-title Новости
+		+e.list
+			each item in news
+				+e.item
+					+e.image-container
+						+e("img").image(src=item.image alt="")
+						+e.image-shadow
+						+e.city= item.city
+						+e.data= item.data
+					+e.content-container
+						+e.news-name= item.news
+						+e.news-description= item.text
+					+e.bottom-shadow
+		+e("button").deal-button.btn.close(type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события
