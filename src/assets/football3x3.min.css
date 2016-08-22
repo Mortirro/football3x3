@@ -2,7 +2,7 @@
 group-css-media-queries: true
 cssmin: true
 ---
-
+/*= require vendor/owl/owl.carousel */
 /*= require assets/styles/normalize */
 /*= require assets/styles/typo */
 /*= require assets/styles/helpers */
