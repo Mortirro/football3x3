@@ -1,14 +1,10 @@
 .news
-	position relative
-
-	width 100%
-	height 100%
-	text-align center
 	background #f9f9f9
 	&__box
 		margin 0 -10px
 	&__section-title
 		padding 45px 0
+		text-align center
 		font-weight 500
 		font-size 40px
 		font-family 'ubuntu'
@@ -17,10 +13,13 @@
 		margin-bottom 100px
 		text-align center
 	&__item
+		position relative
+		z-index 1
 		display inline-block
 		margin 15px
 		width 320px
 		height 390px
+		border 1px solid #cdcdcd
 	&__image
 		position relative
 		width 100%
@@ -58,35 +57,36 @@
 		color #fff
 	&__content-container
 		text-align left
-		// width 320px
-		// height 215px
 		font-size 16px
 		line-height 1.5
-		background #fff
 		color #323232
+		background #fff
 	&__news
 		&-name
 			padding 25px 20px 0
 			font-weight bold
 			font-size 16px
 			font-family 'ubuntu'
-			// color #fff
 		&-description
 			padding 10px 20px 14px
 			font-weight normal
 			font-family 'ubuntu'
 		&-see__all
 			margin-top 60px
-	// &__bottom-shadow
-	// 	position relative
-	// 	margin 0 auto
-	// 	margin-top -20px
-	// 	z-index -1
-	// 	width 312px
-	// 	height 20px
-	// 	border-radius 1000px/100px
-	// 	box-shadow 0 0 30px
+	&__bottom-shadow
+		position relative
+		z-index -1
+		margin 0 auto
+		margin-top -30px
+		width 90%
+		height 30px
+		background red
+		border-radius 1500px/150px
+		box-shadow 0 0 30px
 	&__deal-button
+		margin-left auto
+		margin-right auto
 		margin-bottom 60px
 		padding 5px 80px
 		box-shadow none
+		// margin: 0 auto;
