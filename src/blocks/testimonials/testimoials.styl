@@ -11,7 +11,7 @@
 		padding-top 38px
 		padding-left 0
 		padding-right 0
-		padding-bottom 115px
+		padding-bottom 95px
 		margin 0 -10px
 		text-align center
 		font-size 15px
@@ -19,7 +19,7 @@
 	&__item
 		position relative
 		float left
-		// width 400px
+		margin-bottom 20px
 		padding 10px
 		&-inner
 			position relative
@@ -84,6 +84,9 @@
 		display inline-block
 		vertical-align middle
 		margin-left 5px
+	&__social-link
+		text-decoration none
+		color #5e7bb3
 	&__text
 		text-align left
 		margin 12px 12px 20px 24px
@@ -94,12 +97,6 @@
 		&-controls
 			.owl-nav
 				.owl
-					&-carousel
-					&-item
-					img
-						max-width 100%
-						width auto
-						background blue
 					&-prev
 					&-next
 						position absolute
@@ -115,19 +112,26 @@
 					&-next
 						right -80px
 						background url('i/carousel/carousel_arrow_right.png') no-repeat center center
-			.owl-dots
-				position relative
-				top 50px
-				// width 150px
-				height 15px
-				background green
-				.owl
-					&-dot
-						display inline-block
-						margin 0 10px
-						width 15px
-						height 15px
-						background #c2c2c2
-						border-radius 50%
-						&.active
-							background #f23e35
+
+	.owl
+		&-dots
+			position relative
+			top 35px
+			height 15px
+			// background green
+			.owl
+				&-dot
+					display inline-block
+					margin 0 10px
+					width 15px
+					height 15px
+					background #c2c2c2
+					border-radius 50%
+					&.active
+						background #f23e35
+	.owl
+		&-carousel
+		&-item
+			img
+				max-width 100%
+				width auto

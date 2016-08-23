@@ -10,5 +10,3 @@ $ ->
 		nav: true
 		center: true
 		navText: ""
-		# autoHeight:true
-		slideBy: true

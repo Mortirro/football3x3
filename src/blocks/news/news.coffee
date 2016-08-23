@@ -12,7 +12,7 @@ $ ->
 		navText: ""
 		margin: 30
 		stagePadding: 25
-		touchDrag: true
+		# touchDrag: true
 		# responsive: {
 		# 	0: {
 		# 		items: 1
