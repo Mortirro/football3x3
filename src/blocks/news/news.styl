@@ -10,14 +10,16 @@
 		font-size 40px
 		font-family 'ubuntu'
 		color #000
+
 	&__list
-		margin-bottom 100px
-		text-align center
+		// margin-bottom 100px
+		// text-align center
+		// background: yellow
 	&__item
 		position relative
 		z-index 1
 		display inline-block
-		margin 15px
+		// margin 0 20px
 		width 320px
 		height 390px
 		border 1px solid #cdcdcd
@@ -85,8 +87,29 @@
 		border-radius 1500px/150px
 		box-shadow 0 0 30px
 	&__deal-button
-		margin-left auto
-		margin-right auto
-		margin-bottom 60px
+		margin 60px 0
 		padding 5px 80px
 		box-shadow none
+
+	&__carousel
+		background-color blue
+		// margin-bottom 50px
+	.owl
+		&-controls
+			.owl-nav
+				.owl
+					&-prev
+					&-next
+						position absolute
+						top 50%
+						width 45px
+						height 45px
+						border 1px solid #c5c5c5
+						border-radius 5px
+					&-prev
+						left -80px
+						background url('i/carousel/carousel_arrow_left.png') no-repeat center center
+
+					&-next
+						right -80px
+						background url('i/carousel/carousel_arrow_right.png') no-repeat center center
