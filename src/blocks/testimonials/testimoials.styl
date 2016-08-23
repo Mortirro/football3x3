@@ -19,7 +19,7 @@
 	&__item
 		position relative
 		float left
-		width 33%
+		// width 400px
 		padding 10px
 		&-inner
 			position relative
@@ -87,3 +87,47 @@
 	&__text
 		text-align left
 		margin 12px 12px 20px 24px
+	&__carousel
+		// background-color blue
+		// margin-bottom 50px
+	.owl
+		&-controls
+			.owl-nav
+				.owl
+					&-carousel
+					&-item
+					img
+						max-width 100%
+						width auto
+						background blue
+					&-prev
+					&-next
+						position absolute
+						top 40%
+						width 45px
+						height 45px
+						border 1px solid #c5c5c5
+						border-radius 5px
+					&-prev
+						left -80px
+						background url('i/carousel/carousel_arrow_left.png') no-repeat center center
+
+					&-next
+						right -80px
+						background url('i/carousel/carousel_arrow_right.png') no-repeat center center
+			.owl-dots
+				position relative
+				top 50px
+				// width 150px
+				height 15px
+				background green
+				.owl
+					&-dot
+						display inline-block
+						margin 0 10px
+						width 15px
+						height 15px
+						background #c2c2c2
+						border-radius 50%
+						&.active
+							background #f23e35
