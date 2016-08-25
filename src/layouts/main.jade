@@ -1,14 +1,15 @@
 extends root
 
 block root
-	+b("header").header: +i
+	+b("header").header#header: +i
 	
 	main.main
 		block main
 			!= content
 	
-	unless file.hideFooter
-		+b("footer").footer:+i
+	+b("footer").footer: +i
+	
+	+b("a").gotop(href="#header")
 
 block fonts
 	link(href='http://fonts.googleapis.com/css?family=Fira+Sans:400,400italic|Roboto:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css')
@@ -19,3 +20,4 @@ block styles
 block scripts
 	script(src=asset("jquery-1.11.0.min.js") defer)
 	script(src=asset("football3x3.min.js") defer)
+		
