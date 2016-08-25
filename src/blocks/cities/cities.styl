@@ -56,16 +56,24 @@
 			font-family 'exo_2'
 			color #323232
 	&__main
-		width 100%
+		position absolute
+		z-index 50
+		top 0
+		left 0
+		right 0
+		bottom 0
 		display inline-block
 		text-align center
 		vertical-align middle
-		position absolute
-		z-index 50
 		font-weight normal
 		font-size 30px
 		font-family 'exo_2'
 		color #f23e35
+		&:after
+			content ''
+			height 96%
+			display inline-block
+			vertical-align middle
 		&-container
 			position absolute
 			top 0
@@ -79,19 +87,11 @@
 				left 0
 				right 0
 				bottom 0
+				z-index 26
 				overflow hidden
 				background rgba(255,255,255,.6)
 				border 1px solid #e6e6e6
 				border-radius 5px
-				// background blue
-				z-index 26
-		&:after
-			content ''
-			height 100px
-			display inline-block
-			vertical-align middle
-			// background blue
-			// z-index 22
 	&__subsidiary
 		display inline-block
 		margin-right 7px
