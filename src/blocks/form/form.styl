@@ -1,39 +1,40 @@
 .form
+	margin 0 auto
 	text-align center
+	color #fff
 	background url('i/bg-form.png') no-repeat center center
 	background-size cover
-	margin 0 auto
-	color #fff
 	&__form-shadow
 		background-color rgba(0, 0, 0, 0.65)
-		// width 100%
-		// height 100%
 	&__section-name
 		margin-top 43px
 		margin-bottom 30px
 		text-align center
-		font-family 'ubuntu'
 		font-weight 500
 		font-size 40px
 		line-height 1.2
+		font-family 'ubuntu'
 	&__forms-container
 		display inline-block
-		text-align left
 		width 32%
-		// ?
-	&__company-name,
-	&__user-name,
-	&__user-phone,
-	&__user-email
-		margin 15px auto
-		float left
-		display block
-		vertical-align middle
-		width 30%
-		font-family 'ubuntu'
-		font-weight 400
-		font-size 19px
-		// color #fff
+		text-align left
+	&__user
+		&-company
+		&-name
+		&-phone
+		&-email
+			display block
+			float left
+			margin 15px auto
+			vertical-align middle
+			width 30%
+			font-weight 400
+			font-size 19px
+			font-family 'ubuntu'
+
+		&-team
+			display inline-block
+			margin-left 30%
 	&__input-name
 		margin 11px auto
 		padding 15px
@@ -45,28 +46,25 @@
 		color #b0b0b0
 		border-radius 6px
 		border 0
-	&__user-team
-		display inline-block
-		margin 0 auto
-		width 100%
-	&__user-team
-		margin-left 30%
-	&__deal-button
+	&__checkbox
+		&-title
+			margin-left 8px
+			font-weight bold
+			font-size 18px
+			font-family 'exo_2'
+	&__button
 		display inline-block
 		margin-top 20px
 		width 100%
-	&__info
-		text-align center
-		margin-top 10px
-		margin-bottom 50px
-		font-family 'ubuntu'
-		font-weight bold
-		font-size 14px
-		// color #fff
-	// &__checkbox
-	// 	margin-right 8px
+		&-info
+			margin-top 10px
+			margin-bottom 50px
+			text-align center
+			font-family 'ubuntu'
+			font-weight bold
+			font-size 14px
 	&__span
 		margin-left 8px
-		font-family 'exo_2'
 		font-weight bold
 		font-size 18px
+		font-family 'exo_2'

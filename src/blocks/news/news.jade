@@ -1,6 +1,6 @@
 .container
 	+e.box
-		+e.section-title Новости
+		+e.title Новости
 		+e.list
 			+e.carousel
 				each item in news
@@ -13,5 +13,5 @@
 						+e.content-container
 							+e.news-name= item.news
 							+e.news-description= item.text
-						+e.bottom-shadow
+						+e.content-shadow
 	+e("button").deal-button.btn.close(type="button" data-dismiss="modal" aria-hidden="true") Смотреть все события

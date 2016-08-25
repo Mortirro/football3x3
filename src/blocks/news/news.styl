@@ -3,46 +3,50 @@
 	background #f9f9f9
 	&__box
 		margin 0 -10px
-	&__section-title
+	&__title
 		padding 45px 0
 		text-align center
 		font-weight 500
 		font-size 40px
 		font-family 'ubuntu'
 		color #000
-
 	&__list
 		// margin-bottom 100px
 		// text-align center
 		// background: yellow
 	&__item
 		position relative
+		margin-bottom 50px
 		z-index 1
 		display inline-block
-		margin-bottom 50px
-		width 320px
-		height 390px
+		// width 320px
+		// height 194px
+		width 100%
+		height auto
 		border 1px solid #cdcdcd
+		background: yellow
 	&__image
 		position relative
 		width 100%
 		height auto
 		&-container
 			position relative
-			width 320px
-			height 194px
+			// width 320px
+			// height 194px
+			width 100%
+			height auto
 		&-shadow
 			position absolute
-			background rgba(0, 0, 0, 0.5)
 			top 0
 			right 0
 			bottom 0
 			left 0
+			background rgba(0, 0, 0, 0.5)
 	&__city
 		position absolute
-		z-index 6
 		top 15px
 		left -3px
+		z-index 6
 		padding 8px 30px 11px 32px
 		font-weight bold
 		font-size 18px
@@ -51,19 +55,30 @@
 		background #f23e35
 	&__data
 		position absolute
-		z-index 7
 		bottom 16px
 		left 15px
+		z-index 7
 		font-weight bold
 		font-size 16px
 		font-family 'ubuntu'
 		color #fff
-	&__content-container
-		text-align left
-		font-size 16px
-		line-height 1.5
-		color #323232
-		background #fff
+	&__content
+		&-container
+			text-align left
+			font-size 16px
+			line-height 1.5
+			color #323232
+			background #fff
+		&-shadow
+			position relative
+			z-index -1
+			margin 0 auto
+			margin-top -30px
+			width 90%
+			height 30px
+			background red
+			border-radius 1500px/150px
+			box-shadow 0 0 30px
 	&__news
 		&-name
 			padding 25px 20px 0
@@ -74,23 +89,10 @@
 			padding 10px 20px 14px
 			font-weight normal
 			font-family 'ubuntu'
-		&-see__all
-			margin-top 60px
-	&__bottom-shadow
-		position relative
-		z-index -1
-		margin 0 auto
-		margin-top -30px
-		width 90%
-		height 30px
-		background red
-		border-radius 1500px/150px
-		box-shadow 0 0 30px
 	&__deal-button
 		margin 50px 0
 		padding 5px 80px
 		box-shadow none
-
 	&__carousel
 		// background-color blue
 	.owl
@@ -100,7 +102,7 @@
 					&-prev
 					&-next
 						position absolute
-						top 50%
+						top 40%
 						width 45px
 						height 45px
 						border 1px solid #c5c5c5
@@ -108,7 +110,6 @@
 					&-prev
 						left -80px
 						background url('i/carousel/carousel_arrow_left.png') no-repeat center center
-
 					&-next
 						right -80px
 						background url('i/carousel/carousel_arrow_right.png') no-repeat center center

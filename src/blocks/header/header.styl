@@ -2,40 +2,32 @@
 	display block
 	text-align right
 	background #323232
-	// & ul
-	// 	margin 0
-	// 	padding 0
 	&__box
 		// background rgb(104, 71, 201)
 		&::after
 			content ""
 			height 96%
-
 	&__logo
-		// display inline-block
-		// vertical-align middle
 		position relative
-		float left
 		top 15px
-		// width 25%
-		// height auto
+		float left
 		// background green
-	&__logo-image
-		height 100%
-		width auto
-	&__menu-list
-		text-align: center;
-		text-decoration none
+		&-image
+			height 100%
+			width auto
 	&__menu
 		padding 23px 0
-	&__menu-item
-		display inline-block
-		// background yellow
-	&__menu-link
-		text-decoration none
-		font-weight normal
-		padding-left 20px
-		font-size 16px
-		font-family 'exo_2'
-		color #fff
-		// background blue
+		&-list
+			text-align center
+			text-decoration none
+		&-item
+			display inline-block
+			// background yellow
+		&-link
+			padding-left 20px
+			text-decoration none
+			font-weight normal
+			font-size 16px
+			font-family 'exo_2'
+			color #fff
+			// background blue

@@ -52,6 +52,7 @@
 	&__info
 		text-align left
 	&__name
+		width: 80%
 		margin-top 5px
 		display inline-block
 		text-align left
@@ -69,25 +70,27 @@
 		font-weight 500
 		font-size 18px
 		font-family "ubuntu"
-	&__social-container
-		margin-top 10px
-		text-align left
-		&::after
+	&__social
+		&-container
+			margin-top 10px
+			text-align left
+			&::after
+				display inline-block
+				vertical-align middle
+				height 96%
+		&-image
 			display inline-block
 			vertical-align middle
-			height 96%
-	&__social-image
-		display inline-block
-		vertical-align middle
-		float left
-		margin-left 28px
-	&__link-contatner
-		display inline-block
-		vertical-align middle
-		margin-left 5px
-	&__social-link
-		text-decoration none
-		color #5e7bb3
+			float left
+			margin-left 28px
+		&-link
+			margin-left 5px
+			text-decoration none
+			color #5e7bb3
+	// &__link-contatner
+	// 	display inline-block
+	// 	vertical-align middle
+	// 	margin-left 5px
 	&__text
 		text-align left
 		margin 12px 12px 20px 24px

@@ -28,7 +28,6 @@
 		height 62px
 		border-radius 100%
 		box-shadow 0 0 30px 10px
-
 	&__box
 		margin 0 -10px
 		// background green
@@ -40,33 +39,39 @@
 		color #fff
 	&__list
 		// width 1160px
-		margin 0 auto
-		text-align center
+		// margin 0 auto
+		// text-align center
+		background green
 	&__item
 		display inline-block
 		margin 15px
-		width 320px
-		height 390px
+		width 30%
 		box-shadow 0 0 50px
-		// background: green
+		background yellow
+		&-container
+			// position relative
+			// overflow hidden
+			// width 100%
+
+			// background red
 	&__image
+		display block
 		position relative
 		width 100%
 		height auto
-		// z-index 4
 		&-container
 			position relative
-			width 320px
-			height 194px
-			// z-index: 3
+			// width 320px
+			// height 194px
+			max-width 100%
+			height auto
 		&-shadow
 			position absolute
-			background rgba(0, 0, 0, 0.5)
 			top 0
 			right 0
 			bottom 0
 			left 0
-			// z-index 5
+			background rgba(0, 0, 0, 0.5)
 	&__city
 		position absolute
 		z-index 6
@@ -103,8 +108,13 @@
 			padding 10px 20px 14px
 			font-weight normal
 			font-family 'ubuntu'
-		&-see__all
-			margin-top 60px
+	&__deal-button
+		margin 50px 0 60px
+		padding 5px 80px
+		box-shadow: 0 0 50px rgba(0,0,0,0.7)
+
+		// &-see__all
+		// 	margin-top 60px
 	// &__bottom-shadow
 	// 	position relative
 	// 	margin 0 auto
@@ -114,7 +124,3 @@
 	// 	height 20px
 	// 	border-radius 1000px/100px
 	// 	box-shadow 0 0 30px
-	&__deal-button
-		padding 5px 80px
-		margin 50px 0 60px
-		box-shadow: 0 0 50px rgba(0,0,0,0.7)

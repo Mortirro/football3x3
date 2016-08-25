@@ -2,18 +2,9 @@
 	// background grey
 	background url('i/bg-promo.jpg') no-repeat center center
 	background-size cover
-	&__sponsors-box
-		display inline-block
-		width 100%
-		padding-top 20px
-		// background red
-		&::after
-			display inline-block
-			vertical-align middle
-			content ""
-			height 96%
+
 	&__shadow
-		background-color rgba(0, 0, 0, 0.65)
+		background-color rgba(0, 0, 0, 0.8)
 	&__sponsors
 		// background-color blue
 		display inline-block
@@ -24,12 +15,22 @@
 		line-height 1
 		font-family "ubuntu"
 		color #fff
-	&__sponsors-names
-		// background green
-		display inline-block
-		vertical-align middle
-		text-align center
-	&__sponsors-item
+		&-box
+			display inline-block
+			width 100%
+			padding-top 20px
+			// background red
+			&::after
+				display inline-block
+				vertical-align middle
+				content ""
+				height 96%
+		&-names
+			// background green
+			display inline-block
+			vertical-align middle
+			text-align center
+	&-item
 		// background grey
 		margin 0
 		padding 0 10px
@@ -47,7 +48,7 @@
 		background none
 	&__content
 		text-align center
-	&__play-btn
+	&__play-button
 		margin-top 40px
 		background rgba(0, 0, 0, 0.4)
 		border-radius 50%
