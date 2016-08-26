@@ -4,30 +4,34 @@ $ ->
 	$list = $block.find(".news__carousel")
 
 	$list.addClass("owl-carousel").owlCarousel
-		items: 3
+		# items: 3
 		dots: true
 		loop: true
-		nav: true
-		center: true
-		navText: ""
-		margin: 30
-		stagePadding: 25
-		# touchDrag: true
-		# responsive: {
-		# 	0: {
-		# 		items: 1
-		# 		nav: false
-		# 		center: true
-		# 		stagePadding: 25
-		# 		},
-		# 	640: {
-		# 		items: 2
-		# 		nav: false
-		# 		center: true
-		# 		stagePadding: 25
-		# 		},
-		# 	800: {
-		# 		center: true
-		# 		stagePadding: 25
-		# 	}
-		# }
+		# nav: true
+		# center: true
+		# navText: ""
+		# margin: 30
+		# stagePadding: 25
+		responsive :
+			0 :
+				items: 1
+				center: true
+				margin: 25
+				stagePadding: 25
+			350 :
+				items: 1
+				center: true
+				margin: 50
+				stagePadding: 50
+			560 :
+				items: 2
+				center: false
+				margin: 50
+				stagePadding: 50
+			820 :
+				items: 3
+				center: true
+				nav: true
+				navText: ""
+				margin: 20
+				stagePadding: 20

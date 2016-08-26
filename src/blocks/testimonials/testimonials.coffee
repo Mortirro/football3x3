@@ -4,9 +4,19 @@ $ ->
 	$list = $block.find(".testimonials__carousel")
 
 	$list.addClass("owl-carousel").owlCarousel
-		items: 3
 		dots: true
 		loop: true
 		nav: true
-		center: true
 		navText: ""
+		responsive :
+			0 :
+				items: 1
+				center: true
+				margin: 25
+				stagePadding: 25
+			500 :
+				items: 2
+				stagePadding: 20
+			820 :
+				items: 3
+				center: true
