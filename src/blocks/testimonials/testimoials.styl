@@ -52,13 +52,17 @@
 	&__info
 		text-align left
 	&__name
-		width: 80%
+		width 100%
 		margin-top 5px
-		display inline-block
+		// display inline-block
 		text-align left
 		font-weight 500
 		font-size 18px
 		font-family "ubuntu"
+		background green
+		&-info
+			width 100%
+			background red
 	&__date
 		text-align left
 		display inline-block
@@ -141,35 +145,15 @@
 				width auto
 
 
-@media (max-width 302px)
+
+
+@media (max-width 499px)
 	.testimonials
-		&__name
-			width 70%
-		&__company
-			margin  0 0 0 24px
-@media (max-width 375px)
+			&__name
+				&-info
+					margin 0
+@media (max-width 525px)
 	.testimonials
-		&__name
-			width 70%
-		&__company
-			margin  0
-@media (max-width 425px)
-	.testimonials
-		&__name
-			width 70%
-@media (max-width 500px)
-	.testimonials
-		&__name
-			width 67%
-@media (max-width 768px)
-	.testimonials
-		&__name
-			width 67%
-		&__company
-			margin  0
-@media (max-width 883px)
-	.testimonials
-		&__name
-			width 67%
-		&__company
-			margin  0 0 0 24px
+			&__name
+				&-info
+					margin 0 0 0 24px

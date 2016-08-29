@@ -9,8 +9,9 @@
 							+e("img").image(src=item.image alt="")
 						+e.info
 							+e.name= item.name
-							+e.company= item.company
-							+e.date= item.date
+							+e.name-info
+								+e.company= item.company
+								+e.date= item.date
 						+e.social-container
 							+e("a")(href="https://www.facebook.com/")
 								+e("img").social-image(src=item.socialImage width="19px" height="19px" alt="")
