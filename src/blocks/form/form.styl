@@ -13,23 +13,29 @@
 			text-align left
 		&-title
 			margin 40px 0
-			// margin-top 43px
-			// margin-bottom 30px
 			text-align center
 			font-weight 500
 			font-size 40px
 			line-height 1.2
 			font-family 'ubuntu'
+	&__wrap
+		display inline-block
+		// width 100%
+		&:after
+			content ""
+			display inline-block
+			vertical-align middle
+			height 96%
 	&__user
 		&-company
 		&-name
 		&-phone
 		&-email
-			display block
-			float left
+			display inline-block
+			vertical-align middle
 			margin 15px auto
 			vertical-align middle
-			width 30%
+			width 29%
 			font-weight 400
 			font-size 19px
 			font-family 'ubuntu'
@@ -37,7 +43,9 @@
 			display inline-block
 			margin-left 30%
 	&__input-name
-		margin 11px auto
+		display inline-block
+		vertical-align middle
+		// margin 11px auto
 		padding 15px
 		width 70%
 		height 40px
@@ -75,15 +83,15 @@
 		&__form
 			&-container
 				width 80%
-			&-title
-				font-size 30px
-		&__user
-			&-company
-			&-name
-			&-phone
-			&-email
-				margin 20px auto
-				font-size 15px
+			// &-title
+			// 	font-size 30px
+		// &__user
+		// 	&-company
+		// 	&-name
+		// 	&-phone
+		// 	&-email
+		// 		margin 20px auto
+		// 		font-size 15px
 		&__checkbox
 			&-title
 				font-size 16px
@@ -100,9 +108,22 @@
 	.form
 		&__form
 			&-container
-				width 60%
+				width 80%
 			&-title
 				font-size 35px
+		// &__user
+		// 	&-company
+		// 	&-name
+		// 	&-phone
+		// 	&-email
+		// 		// margin 20px auto
+		// 		font-size 15px
+
+@media (max-width 676px)
+	.form
+		&__form
+			&-container
+				width 50%
 		&__user
 			&-company
 			&-name
@@ -110,15 +131,19 @@
 			&-email
 				// margin 20px auto
 				font-size 15px
+
 @media (max-width 768px)
 	.form
 		&__form
 			&-container
-				width 40%
+				width 45%
 			// &-title
 			// 	font-size 30px
 @media (max-width 897px)
 	.form
+		&__form
+			&-title
+				font-size 30px
 		&__button
 			// display inline-block
 			// background blue
@@ -126,7 +151,11 @@
 			// font-weight: bold;
 			// color #fff
 			font-size 20px
+			padding 7px 0
 			// border-radius 5px
 			// box-shadow 0 0 8px 3px rgba(0,0,0,0.3);
 			// height auto
 			// border 0
+		&__checkbox
+			&-title
+				font-size 14px
