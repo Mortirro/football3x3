@@ -11,12 +11,18 @@ $ ->
 		responsive :
 			0 :
 				items: 1
+				nav: false
 				center: true
 				margin: 25
 				stagePadding: 25
 			500 :
 				items: 2
+				nav: false
 				stagePadding: 20
 			820 :
 				items: 3
+				nav: false
+				center: true
+			1280 :
+				nav: true
 				center: true
