@@ -33,5 +33,5 @@ $ ->
 				center: true
 				nav: true
 				navText: ""
-				margin: 20
+				margin: 25
 				stagePadding: 20
