@@ -17,11 +17,11 @@
 		font-weight 500
 		font-size 40px
 		font-family 'ubuntu'
-	&__name-description
-		margin 20px 0
-		font-weight 500
-		font-size 20px
-		font-family 'ubuntu'
+		&-description
+			margin 20px 0
+			font-weight 500
+			font-size 20px
+			font-family 'ubuntu'
 	&__user-email
 		font-weight bold
 		font-size 19px
@@ -48,3 +48,66 @@
 		font-size 12px
 		font-family 'ubuntu'
 		margin-bottom 50px
+
+
+@media (max-width 329px)
+	.feedback
+		&__deal-button
+			font-size 20px
+		&__name
+			font-size 30px
+			// &-description
+			// 	width 80%
+			// 	margin 0 auto
+@media (max-width 385px)
+	.feedback
+		&__input-email
+			width 70%
+			margin 10px 0
+		&__deal-button
+			// margin-left 0
+			width 70%
+			margin 10px 0
+@media (max-width 425px)
+	.feedback
+		&__image
+			margin-top 20px
+			width 50%
+		&__forms
+			text-align center
+			display inline-block
+			vertical-align top
+			padding-top 10px
+		&__name
+			font-size 30px
+			&-description
+				font-size 16px
+		&__user-email
+			font-size 16px
+		&__info
+			padding 2% 20% 0
+@media (max-width 600px)
+	.feedback
+		&__image
+			width 50%
+		&__forms
+			padding-top 20px
+			text-align center
+		&__name
+			font-size 35px
+			&-description
+				width 75%
+				margin 0 auto
+		&__user-email
+			font-size 16px
+			span
+				display block
+		&__input-email
+			width 70%
+			margin 10px 0
+		&__deal-button
+			margin-left 0
+			width 70%
+			margin 10px 0
+		&__info
+			padding 2% 10% 0
