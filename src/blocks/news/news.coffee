@@ -7,7 +7,7 @@ $ ->
 		# items: 3
 		dots: true
 		loop: true
-		# nav: true
+
 		# center: true
 		# navText: ""
 		# margin: 30
@@ -16,22 +16,25 @@ $ ->
 			0 :
 				items: 1
 				center: true
+
 				margin: 25
 				stagePadding: 25
 			350 :
 				items: 1
+
 				center: true
 				margin: 50
 				stagePadding: 50
 			560 :
 				items: 2
 				center: false
+
 				margin: 50
 				stagePadding: 50
 			820 :
 				items: 3
 				center: true
-				nav: true
+				
 				navText: ""
 				margin: 25
 				stagePadding: 20
