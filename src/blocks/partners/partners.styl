@@ -16,10 +16,26 @@
 			display inline-block
 			height 96%
 			vertical-align middle
-
 	&__item
 		display inline-block
 		margin 15px
 		// width 20%
 		height auto
 		vertical-align middle
+		// background green
+		&-image
+			display block
+@media (max-width 375px)
+	.partners
+		&__name
+			font-size 30px
+		&__item
+			&-image
+				width 100px
+				height auto
+@media (max-width 768px)
+	.partners
+		&__item
+			&-image
+				width 100px
+				height auto
