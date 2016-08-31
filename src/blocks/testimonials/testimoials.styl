@@ -50,7 +50,9 @@
 			height 38px
 			border-radius 4px
 	&__info
+		margin 12px 12px 0 24px
 		text-align left
+		// background green
 	&__name
 		width 100%
 		margin-top 5px
@@ -86,7 +88,7 @@
 			display inline-block
 			vertical-align middle
 			float left
-			margin-left 28px
+			// margin-left 28px
 		&-link
 			margin-left 5px
 			text-decoration none
@@ -145,15 +147,12 @@
 				width auto
 
 
-
-
-@media (max-width 499px)
+@media (max-width 485px)
 	.testimonials
-			&__name
-				&-info
-					margin 0
-@media (max-width 525px)
-	.testimonials
-			&__name
-				&-info
-					margin 0 0 0 24px
+		&__list
+			padding-top 0
+		&__title
+			width 90%
+			margin-left auto
+			margin-right auto
+			line-height 1.2
