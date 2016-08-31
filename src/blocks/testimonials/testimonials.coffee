@@ -6,8 +6,8 @@ $ ->
 	$list.addClass("owl-carousel").owlCarousel
 		dots: true
 		loop: true
-		nav: true
-		navText: ""
+		# nav: true
+		# navText: ""
 		responsive :
 			0 :
 				items: 1
@@ -18,7 +18,8 @@ $ ->
 			500 :
 				items: 2
 				nav: false
-				stagePadding: 20
+				margin: 10
+				stagePadding: 10
 			820 :
 				items: 3
 				nav: false
@@ -26,3 +27,4 @@ $ ->
 			1280 :
 				nav: true
 				center: true
+				navText: ""
