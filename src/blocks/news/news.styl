@@ -8,8 +8,6 @@
 		font-size 40px
 		font-family 'ubuntu'
 		color #000
-	&__list
-		// background: yellow
 	&__item
 		position relative
 		margin-bottom 50px
@@ -18,7 +16,6 @@
 		width 100%
 		height auto
 		border 1px solid #cdcdcd
-		background: yellow
 	&__image
 		position relative
 		width 100%
@@ -86,30 +83,28 @@
 		padding 5px 80px
 		box-shadow none
 	&__carousel
-		// background-color blue
-	.owl
-		&-controls
-			.owl-nav
-				.owl
-					&-prev
-					&-next
-						position absolute
-						top 40%
-						width 45px
-						height 45px
-						border 1px solid #c5c5c5
-						border-radius 5px
-					&-prev
-						left -80px
-						background url('i/carousel/carousel_arrow_left.png') no-repeat center center
-					&-next
-						right -80px
-						background url('i/carousel/carousel_arrow_right.png') no-repeat center center
-						background red
+		.owl
+			&-controls
+				.owl-nav
+					.owl
+						&-prev
+						&-next
+							position absolute
+							top 40%
+							width 45px
+							height 45px
+							border 1px solid #c5c5c5
+							border-radius 5px
+						&-prev
+							left -80px
+							background url('i/carousel/carousel_arrow_left.png') no-repeat center center
+						&-next
+							right -80px
+							background url('i/carousel/carousel_arrow_right.png') no-repeat center center
+
 	.owl
 		&-dots
 			position relative
-			// background green
 			.owl
 				&-dot
 					display inline-block
@@ -121,32 +116,31 @@
 					&.active
 						background #f23e35
 
-@media (max-width 320px)
-	.news
-		&__item
-			width 90%
-@media (max-width 400px)
-	.news
-		&__item
-			// width 100%
-		&__deal-button
-			width 80%
-media (max-width 500px)
-	.news
-		&__item
-			width 50%
-@media (max-width 600px)
+// @media (max-width 320px)
+// 	.news
+// 		// &__item
+// 		// 	width 90%
+// @media (max-width 400px)
+// 	.news
+// 		&__item
+// 		&__deal-button
+// 			width 80%
+// media (max-width 500px)
+// 	// .news
+// 	// 	&__item
+// 	// 		width 50%
+@media (max-width 1600px)
 	.news
 		&__item
 			width 100%
-		&__deal-button
-			width 60%
-			margin 30px 0
-			padding 10px
-			font-size 20px
-@media (max-width 715px)
-	.news
-		&__item
-			width 40%
-		&__deal-button
-			width 86%
+		// &__deal-button
+		// 	width 60%
+		// 	margin 30px 0
+		// 	padding 10px
+		// 	font-size 20px
+// @media (max-width 715px)
+// 	.news
+// 		&__item
+// 			width 100%
+// 		&__deal-button
+// 			width 86%

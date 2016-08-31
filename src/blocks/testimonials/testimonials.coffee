@@ -25,6 +25,6 @@ $ ->
 				nav: false
 				center: true
 			1280 :
-				nav: true
 				center: true
+				nav: true
 				navText: ""

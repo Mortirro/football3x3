@@ -1,8 +1,10 @@
 .vacancies
 	// margin 0 auto
-	width 50%
+	width 100%
 	&__header
-		margin 55px 0 35px
+		margin-top 55px
+		margin-left 40%
+		border-bottom 35px
 		font-weight normal
 		font-size 25px
 		font-family "ubuntu"
@@ -20,9 +22,12 @@
 
 @media (max-width 700px)
 	.vacancies
-		width 100%
-		// background: blue
 		&__header
+			margin-left 0
 			text-align center
 		&__name
 			margin-left 15%
+@media (max-width 846px)
+	.vacancies
+		&__header
+			margin-left 20%
