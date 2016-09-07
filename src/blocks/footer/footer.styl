@@ -1,5 +1,12 @@
+// .container
+// 	width 100%
+// 	background #43474e
 .footer
 	&__contacts
+		padding-top 55px
+		padding-left 100px
+		padding-right 100px
+		padding-bottom 35px
 		float left
 		background #43474e
 		width 100%
@@ -8,19 +15,37 @@
 			content ""
 			height 96%
 			vertical-align top
+
+		@media md
+			padding-left 80px
+			padding-right 80px
+		@media desktop
+			padding-left 50px
+			padding-right 50px
+		@media tablet
+			padding-left 40px
+			padding-right 40px
+		@media phone
+			padding-left 0
+			padding-right 0
 	&__col
 		display inline-block
-		width 30%
+		width 33%
 		vertical-align top
 		font-weight 400
 		font-size 16px
 		font-family "ubuntu"
 		text-align left
 		color #8e9197
+
+		@media tablet
+			width 31%
+		@media phone
+			width 100%
+			// text-align center
+
 	&__contacts
 		&-name
-			margin 55px 0 10px
-			// margin-top 55px
 			font-weight normal
 			font-size 25px
 			font-family "ubuntu"
@@ -34,17 +59,17 @@
 			text-decoration none
 			color #8e9197
 
-@media (max-width 700px)
-	.footer
-		&__col
-			width 100%
-		&__contacts
-			&-name
-				text-align center
-			&-item
-				margin-left 15%
-				// width 50%
-// 				// background: blue
+// @media (max-width 700px)
+// 	.footer
+// 		&__col
+// 			width 100%
+// 		&__contacts
+// 			&-name
+// 				text-align center
+// 			&-item
+// 				margin-left 15%
+
+
 // @media (max-width 900px)
 // 	.footer
 // 		&__col

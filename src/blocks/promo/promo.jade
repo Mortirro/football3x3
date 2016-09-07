@@ -1,21 +1,22 @@
 //- +e.bg-video
 //- video(width="100%" height="auto" poster="assets/i/bg-promo.jpg")
 //- 	source(src="assets/v/test2.mp4" )
-+e.promo
-	+e.shadow
-		.container
-			+e.section
-				+e.sponsors-box
-					+e.sponsors НАШИ ГЕНЕРАЛЬНЫЕ СПОНСОРЫ
-					+e.sponsors-names
-							each item in sponsors
-								if item.general
-									+e("a").sponsors-item(href=item.url)
-										+e("img").sponsors-image(src=item.image width="auto" height="70px" alt=item.title)
-					+e.button-container
-						+e("button").become-sponsors.btn(type="button" data-dismiss="modal" aria-hidden="true") СТАТЬ СПОНСОРОМ
-			+e.content
-				+e("img").play-button(src="assets/i/promo_play_btm.svg" width="64px" height="64px" alt="")
-				+e.title ЦЕНТРАЛЬНОЕ ФУТБОЛЬНОЕ СОБЫТИЕ ГОДА
-				+e.text Открытие заявок для Украинской <b>Startup</b> и <b>IT экосистемы</b>, <br> в 7 городах с 1 июля. Мы ищем организационных партнеров.
-				+e("a").button.btn(href="/") СТАТЬ ПАРТНЕРОМ
+
+.container
+	+e.sponsors-box
+		+e.sponsors наши генеральные спонсоры
+		+e.sponsors-names
+				each item in sponsors
+					if item.general
+						+e("a").sponsors-item(href=item.url)
+							+e("img").sponsors-image(src=item.image alt=item.title)
+		+e.button-container
+			+e("button").become-sponsors.btn(type="button" data-dismiss="modal" aria-hidden="true") стать спонсором
+	+e.info
+		+e.play-button-row
+			+e("img").play-button(src="assets/i/promo_play_btm.svg" width="64px" height="64px" alt="")
+		+e.content
+			+e.content-title центральное футбольное событие года
+			+e.content-text Открытие заявок для Украинской <b>Startup</b> и <b>IT экосистемы</b>, <br> в 7 городах с 1 июля. Мы ищем организационных партнеров.
+		+e.button-row
+			+e("a").button.btn(href="/") стать партнером

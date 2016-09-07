@@ -15,6 +15,7 @@
 		&-image
 			height 100%
 			width auto
+
 	&__menu
 		padding 23px 0
 		&-list
@@ -27,7 +28,35 @@
 			padding-left 20px
 			text-decoration none
 			font-weight normal
-			font-size 16px
+			// font-size 16px
 			font-family 'exo_2'
 			color #fff
 			// background blue
+
+
+	// *Горизонтальное меню*/
+	&__menu-list
+		margin 0
+		padding 0
+
+	&__menu-list li
+		position relative
+
+
+	&__menu-item
+		display inline-block
+		padding 0
+
+	&__menu-link
+		text-decoration none
+		// font-size 20px
+		// letter-spacing 1px
+		color #fff
+		display block
+		padding 10px 10px
+		/*цвет верхнего меню при навидении и нажатии*/
+		&:focus
+		&:link
+		&:active
+		&:hover
+			color #ef5829

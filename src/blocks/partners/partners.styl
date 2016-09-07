@@ -1,15 +1,24 @@
 .partners
-	background #fff
+	&__row
+		padding-top 20px
+		padding-left 50px
+		padding-right 50px
+		padding-bottom 80px
+		@media phone
+			padding-left 10px
+			padding-right 10px
+			padding-bottom 10px
 	&__name
-		margin 45px 0
 		text-align center
+		padding-bottom 40px
 		font-weight 500
 		font-size 40px
 		font-family 'ubuntu'
 		color #323232
+		@media phone
+			padding-bottom 20px
+			font-size 20px
 	&__list
-		// background red
-		margin-bottom 60px
 		text-align center
 		&::after
 			content ""
@@ -18,24 +27,13 @@
 			vertical-align middle
 	&__item
 		display inline-block
-		margin 15px
-		// width 20%
-		height auto
 		vertical-align middle
-		// background green
-		&-image
-			display block
-@media (max-width 375px)
-	.partners
-		&__name
-			font-size 30px
-		&__item
-			&-image
-				width 100px
-				height auto
-@media (max-width 768px)
-	.partners
-		&__item
-			&-image
-				width 100px
-				height auto
+		width  25%
+		height 150px
+		margin 0 -5px 20px 0
+		padding 5px
+		fit-image()
+		@media phone
+			width  30%
+			height 100px
+			margin-bottom 0
