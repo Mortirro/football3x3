@@ -2,8 +2,12 @@
 	display block
 	text-align right
 	background #323232
+	@media phone
+		&.active
+			.header__menu
+				display block
 	&__box
-		// background rgb(104, 71, 201)
+		height 80px
 		&::after
 			content ""
 			height 96%
@@ -11,19 +15,20 @@
 		position relative
 		top 15px
 		float left
-		// background green
+		background green
 		&-image
 			height 100%
 			width auto
 
 	&__menu
-		padding 23px 0
+		// padding 23px 0
+
 		&-list
 			text-align center
 			text-decoration none
 		&-item
 			display inline-block
-			// background yellow
+			background yellow
 		&-link
 			padding-left 20px
 			text-decoration none
@@ -31,32 +36,60 @@
 			// font-size 16px
 			font-family 'exo_2'
 			color #fff
-			// background blue
-
+			background blue
+			z-index: 100
 
 	// *Горизонтальное меню*/
-	&__menu-list
-		margin 0
-		padding 0
+	&__menu
+		@media phone
+			display none
+			position absolute
+			top 100%
+			left 0
+			right 0
+			background green
+		&-list
+			margin 0
+			padding 0
+		&-item
+			position relative
+			display inline-block
+			padding 0
 
-	&__menu-list li
-		position relative
+		&-link
+			text-decoration none
+			color #fff
+			display block
+			padding 10px 10px
+			/*цвет верхнего меню при навидении и нажатии*/
+			&:focus
+			&:link
+			&:active
+			&:hover
+				color #ef5829
 
+	&__toggle
+		display none
+		float right
+		width 50px
+		height @width
+		background red
+		@media phone
+			display block
 
-	&__menu-item
-		display inline-block
-		padding 0
-
-	&__menu-link
-		text-decoration none
-		// font-size 20px
-		// letter-spacing 1px
-		color #fff
-		display block
-		padding 10px 10px
-		/*цвет верхнего меню при навидении и нажатии*/
-		&:focus
-		&:link
-		&:active
-		&:hover
-			color #ef5829
+	// &__menu-item
+	// 	display inline-block
+	// 	padding 0
+	// &__menu-link
+	// 	text-decoration none
+	// 	// font-size 20px
+	// 	// letter-spacing 1px
+	// 	color #fff
+	// 	display block
+	// 	padding 10px 10px
+	// 	/*цвет верхнего меню при навидении и нажатии*/
+	// 	&:focus
+	// 	&:link
+	// 	&:active
+	// 	&:hover
+	// 		color #ef5829
