@@ -1,11 +1,26 @@
 .header
 	display block
-	text-align right
+	// text-align right
 	background #323232
 	@media phone
 		&.active
-			.header__menu
-				display block
+			.header
+				&__menu
+					position absolute
+					top 0
+					display block
+					width 100%
+					background rgba(#000000, 0.8)
+					&-list
+						margin 20px 0
+						padding-left 0
+					&-item
+						display block
+						width 100%
+						margin 10px 0
+					&-link
+						font-size 22px
+
 	&__box
 		height 80px
 		&::after
@@ -15,81 +30,50 @@
 		position relative
 		top 15px
 		float left
-		background green
+		// background green
 		&-image
 			height 100%
 			width auto
 
 	&__menu
-		// padding 23px 0
-
-		&-list
-			text-align center
-			text-decoration none
-		&-item
-			display inline-block
-			background yellow
-		&-link
-			padding-left 20px
-			text-decoration none
-			font-weight normal
-			// font-size 16px
-			font-family 'exo_2'
-			color #fff
-			background blue
-			z-index: 100
-
-	// *Горизонтальное меню*/
-	&__menu
+		padding 23px 0
 		@media phone
 			display none
 			position absolute
 			top 100%
 			left 0
 			right 0
-			background green
+			background yellow
+			z-index 100
 		&-list
-			margin 0
-			padding 0
+			padding-left 0
+			text-align center
+			text-decoration none
 		&-item
 			position relative
 			display inline-block
-			padding 0
-
 		&-link
 			text-decoration none
+			font-weight normal
+			font-size 16px
+			font-family 'exo_2'
 			color #fff
-			display block
-			padding 10px 10px
-			/*цвет верхнего меню при навидении и нажатии*/
 			&:focus
 			&:link
 			&:active
 			&:hover
 				color #ef5829
-
 	&__toggle
 		display none
 		float right
 		width 50px
 		height @width
+		border 3px solid #ef5829
+		border-radius 0
 		background red
 		@media phone
+			position absolute
+			z-index 100
 			display block
-
-	// &__menu-item
-	// 	display inline-block
-	// 	padding 0
-	// &__menu-link
-	// 	text-decoration none
-	// 	// font-size 20px
-	// 	// letter-spacing 1px
-	// 	color #fff
-	// 	display block
-	// 	padding 10px 10px
-	// 	/*цвет верхнего меню при навидении и нажатии*/
-	// 	&:focus
-	// 	&:link
-	// 	&:active
-	// 	&:hover
-	// 		color #ef5829
+			right 20px
+			top 20px
