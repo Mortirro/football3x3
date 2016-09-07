@@ -5,12 +5,18 @@
 	@media phone
 		&.active
 			.header
+				&__toggle
+					background transparent
+					&:before
+						transform: rotate(45deg) translate(5px, 6px)
+					&:after
+						transform: rotate(-45deg) translate(5px, -6px)
 				&__menu
 					position absolute
 					top 0
 					display block
 					width 100%
-					background rgba(#000000, 0.8)
+					background rgba(#323232, 1)
 					&-list
 						margin 20px 0
 						padding-left 0
@@ -18,11 +24,13 @@
 						display block
 						width 100%
 						margin 10px 0
+						border-bottom 1px solid rgba(255,255,255,0.2)
 					&-link
 						font-size 22px
 
 	&__box
-		height 80px
+		@media phone
+			height 80px
 		&::after
 			content ""
 			height 96%
@@ -30,11 +38,15 @@
 		position relative
 		top 15px
 		float left
+		@media phone
+			width 100%
+			text-align center
 		// background green
 		&-image
 			height 100%
 			width auto
-
+			@media phone
+				width 170px
 	&__menu
 		padding 23px 0
 		@media phone
@@ -52,6 +64,7 @@
 		&-item
 			position relative
 			display inline-block
+			padding 0 10px
 		&-link
 			text-decoration none
 			font-weight normal
@@ -62,18 +75,59 @@
 			&:link
 			&:active
 			&:hover
-				color #ef5829
+				color #f23e35
+
+
+
 	&__toggle
 		display none
 		float right
-		width 50px
+		width 40px
 		height @width
-		border 3px solid #ef5829
-		border-radius 0
-		background red
+		// border 3px solid #ef5829
+		// border-radius 0
 		@media phone
 			position absolute
 			z-index 100
-			display block
 			right 20px
 			top 20px
+			display block
+			width 20px
+			height 4px
+			background #fff
+			transition all .2s ease-in-out
+
+			&:before
+			&:after
+				position absolute
+				background: #fff
+				content: ''
+				width: 20px
+				height 4px
+				transition all .2s ease-in-out
+			&:before
+				top -8px
+			&:after
+				top 8px
+
+
+
+			// background transparent
+			// &:before
+			// 	transform: rotate(45deg) translate(5px, 6px)
+			// &:after
+			// 	transform: rotate(-45deg) translate(5px, -6px)
+
+
+		// @media phone
+			// position absolute
+			// z-index 100
+			// display block
+			// right 20px
+			// top 20px
+			// border 3px solid #f23e35
+			// border-radius 0
+			// -webkit-transition border-radius 300ms ease
+			// transition border-radius 300ms ease
+			// &:hover
+			// 	border-radius 50%
