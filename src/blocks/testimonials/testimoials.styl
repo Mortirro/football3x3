@@ -1,12 +1,21 @@
 .testimonials
 	background-color #f9f9f9
 	&__title
+		width 90%
+		margin-left auto
+		margin-right auto
 		padding-top 43px
 		padding-bottom 34px
 		text-align center
 		font-weight 500
 		font-size 40px
 		font-family 'ubuntu'
+		@media phone
+			// width 90%
+			// margin-left auto
+			// margin-right auto
+			font-size 30px
+			line-height 1.2
 	&__list
 		padding-top 38px
 		padding-left 0
@@ -16,6 +25,8 @@
 		text-align center
 		font-size 15px
 		clearfix()
+		@media phone
+			padding-top 0
 	&__item
 		position relative
 		float left
@@ -106,6 +117,8 @@
 	.owl
 		&-controls
 			.owl-nav
+				@media sm
+					display none
 				.owl
 					&-prev
 					&-next
@@ -147,12 +160,12 @@
 				width auto
 
 
-@media (max-width 485px)
-	.testimonials
-		&__list
-			padding-top 0
-		&__title
-			width 90%
-			margin-left auto
-			margin-right auto
-			line-height 1.2
+// @media (max-width 485px)
+// 	.testimonials
+// 		&__list
+// 			padding-top 0
+// 		&__title
+// 			width 90%
+// 			margin-left auto
+// 			margin-right auto
+// 			line-height 1.2
